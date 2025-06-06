@@ -175,9 +175,22 @@
         color: white;
         border-radius: 4px;
         padding: 20px;
-        margin-top: 60px;
+        margin-top: 30px;
         margin-bottom: 30px;
         height: 180px;
+      }
+      .cta-box-first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, #2367f4 0%, #143c8e 100%);
+        color: white;
+        border-radius: 4px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 140px;
+        text-align: center;
       }
       .cta-image {
         width: 215px;
@@ -217,6 +230,43 @@
         line-height: 1.4;
       }
       /* -----------------------------Main-------- */
+      /* -----------------------------table-------- */
+      .portfolio-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 0 1px #e0e7ff;
+        margin-bottom: 40px;
+      }
+
+      .portfolio-table thead {
+        background-color: #ebf1ff;
+        font-size: 8px;
+        font-weight: 600;
+      }
+
+      .portfolio-table th,
+      .portfolio-table td {
+        padding: 16px;
+        text-align: left;
+        border: 1px solid #e0e7ff;
+        font-size: 8px;
+      }
+
+      .portfolio-table th {
+        font-weight: bold;
+      }
+
+      .portfolio-table td {
+        color: #585858;
+      }
+
+      .portfolio-table td span {
+        font-weight: 600;
+      }
+      /* -----------------------------table-------- */
     </style>
   </head>
   <body>
@@ -299,9 +349,51 @@
         <h3 class="section-heading sender-name">
           Introducing the New Portfolio
         </h3>
+        <div class="cta-box-first">
+          <div class="cta-text">
+            <h3>Street Momentum</h3>
+            <p>
+              This portfolio focuses on {Investment Focus}, providing
+              opportunities through a <br />
+              combination of {key themes or asset classes}.
+            </p>
+          </div>
+        </div>
         <h3 class="section-heading sender-name">
           Introducing the New Portfolio
         </h3>
+        <div>
+          <table class="portfolio-table">
+            <thead>
+              <tr>
+                <th>Portfolio Name</th>
+                <th>Volatility Profile</th>
+                <th>Investment Amount</th>
+                <th>Subscription Plan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span>{Portfolio 1 Name}</span></td>
+                <td>{Volatility Label}</td>
+                <td>{Investment Amount}</td>
+                <td>{Subscription Plan}</td>
+              </tr>
+              <tr>
+                <td><span>{Portfolio 2 Name}</span></td>
+                <td>{Volatility Label}</td>
+                <td>{Investment Amount}</td>
+                <td>{Subscription Plan}</td>
+              </tr>
+              <tr>
+                <td><span>{New Portfolio Name}</span></td>
+                <td>{Volatility Label}</td>
+                <td>{Investment Amount}</td>
+                <td>{Subscription Plan}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p class="sender-mail">
           This new portfolio provides a <strong>unique option</strong> if you're
           looking to adjust your <strong>investment strategy</strong> or explore
